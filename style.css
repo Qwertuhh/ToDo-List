@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&family=Oswald:wght@200;300;400&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&family=Staatliches&display=swap');
+:root{
+  --bg:#46c5aa;
+  --br:10px;
+  --e:#0e7a3b;
+  --main_w:60%;
+  --h:100;
+  /* --r:calc(100%-(var(--r))); */
+  --r:35%;
+  --br_clicker:10px;
+  --btn:rgb(29, 29, 165);
+  --btn_focus:rgb(20, 20, 202);
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.lab{
+  /* position: relative; */
+  left: 0;
+  /* margin-left:2px ; */
+  margin-top:10px;
+}
+body{
+  font-size:24px;
+  font-family: 'Oswald';
+  font-weight:1;
+  background:var(--bg);
+  height: 90%;
+}
+#todo_Main{
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  backdrop-filter: blur(100px);
+  background:rgba(255, 255, 255, 0.61);
+  border-radius: var(--br);
+  width: var(--main_w);
+  float:left;
+  padding: 10px;
+}
+#list{
+  background-color:transparent;
+  margin: 0px;
+  width: 95%;
+  height: 90%;
+  padding: 8px;
+}
+#todo_list{
+  justify-content: center;
+  align-items: left;
+  padding: 10px;
+  width: 100%;
+}
+/* #scro{
+  display: inline;
+} */
+.sc_n{
+  font-weight: 100;
+  background-color: rgb(20, 61, 20);
+  width: 20px;
+  color:white;
+  /* border-radius: var(--br); */
+  border-top-left-radius: var(--br);
+  border-top-right-radius: var(--br);
+  padding: 4px;
+  margin-top: 2px;
+}
+#v1{
+  background-color:rgba(255, 255, 255, 0.205);
+  height: 80%;
+  width: 90%;
+  resize: none; 
+  float: left;
+}
+.value{
+  transition: 0.2s;
+  border-radius: var(--br);
+  margin: 10px;
+  padding: 10px;
+  border: 0px solid;
+
+}
+.value:focus{
+  background-color:rgba(255, 255, 255, 0.795);
+  outline:none;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition: 0.2s;
+  
+}
+.div_s{
+  align-items: left;
+  align-content: left;
+}
+.btn{
+  color: white;
+  background-color:var(--btn);
+  transition: 0.2s;
+  float: left;
+  cursor: pointer;
+}
+.btn:focus{
+  background-color:var(--btn_focus);
+  outline:none;
+  border-radius: var(--br_clicker);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition: 0.2s;
+}
+.btn:hover{
+  background-color: rgb(21, 21, 180);
+}
+.no{
+  font-size: larger;
+  background-color: rgba(247, 23, 23, 0.377);
+  color: black;
+  border-radius: var(--br);
+  padding: 5px;
+  margin: 5px;
+  font-weight: 200;
+}
+#todo_enter{
+  justify-content: left;
+  padding: 5px;
+  margin: 10px;
+  position: relative;
+  background:rgba(255, 255, 255, 0.637);
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+  align-items: left;
+  width: var(--r);
+  float: right;
+  position:sticky;
+  
+}
+.div_s{
+  height: 100%;
+}
+#o_l{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 98%;
+  height: 70%;
+  margin: 4px;
+  margin-bottom: 45px;
+  padding: 5px;
+}
+
+#o_l::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+  padding: 4px;
+}
+
+#o_l::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  padding: 4px;
+  background-color: #055225;
+}
+
+#o_l::-webkit-scrollbar-track {
+  margin: 4px;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: transparent;
+}
+#head{
+  font-size: 50px;
+  font-weight: 5;
+  font-family: 'Rubik Mono One';
+  text-align: center;
+  margin-top: 2rem;
+}
+.element{
+  padding: 5px;
+  min-width: 95%;
+  width: 400px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  margin: 0px;
+  background-color:var(--e);
+  max-width: 95%;
+  border-bottom-left-radius: var(--br);
+  border-bottom-right-radius: var(--br);
+  border-top-right-radius: var(--br);
+}
+.element:hover{
+  background-color: rgb(32, 87, 32)
+
+}
+ul {
+  background:var(--bg);
+  border-radius: var(--br);
+  list-style: none;
+}
+.div_s{
+  margin: 5px;
+  padding: 5px;
+}
